@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping master page || Frontend mentor</title>
+
+    <!-- === Frontend Icon === -->
+    <link rel="icon" href="images/favicon-32x32.png" type="png/img">
+
+    <!-- === CSS Link === -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- === Google Fonts Link === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- === Font awesome Link === -->
+    <script src="https://kit.fontawesome.com/19f779adb0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1 class="title">PING<span>.</span> </h1>
+            <h2 class="sub__title">
+                We are lauching <span>soon!</span>
+            </h2>
+            <p class="info">Subscribe and get notified</p>
+            <form class="form" id="form">
+                <input id="email" type="text" placeholder="Your email address...">
+                <div class="error__messeage"></div>
+                <button onclick="validation()" type="submit" class="button">Notify Me</button>
+            </form>
+            <img src="images/illustration-dashboard.png" alt="">
+        </div>
+
+        <div class="footer">
+            <ul class="social__icons">
+                <li class="social__links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+            <div class="copy__right">
+                <i class="fa-regular fa-copyright"></i>
+                <!-- <i class="fa-solid fa-copyright"></i> -->
+                <p>Copyright Ping. All rights reserved</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
