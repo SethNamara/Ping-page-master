@@ -57,6 +57,7 @@ body {
     font-family: var(--ff-family);
     font-size: var(--fs-150);
     color: var(--clr-accent-300);
+    margin-inline: .5rem;
 }
 
 .container {
@@ -102,16 +103,22 @@ body {
 }
 
 .form {
+    margin: 0 auto;
+    max-width: 50rem;
     display: flex;
     gap: .5rem;
     flex-direction: column;
-    font-size: var(--fs-100);
 }
 
 input {
-    padding: .8rem 15rem .8rem .8rem;
-    border: .5px solid var(--clr-secondary-100);
-    border-radius: 30px;
+    border-radius: 100vw;
+    padding-left: 1rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: .5px solid var(--clr-secondary-100);
     opacity: .5;
     cursor: pointer;
 }
@@ -123,8 +130,8 @@ input {
 .button {
     cursor: pointer;
     color: #fff;
-    padding: .8rem 2rem;
-    border-radius: 30px;
+    padding: .9rem 2rem;
+    border-radius: 100vw;
     border: none;
     background-color: var(--clr-secondary-100);
     box-shadow: 3px 3.5px 4px var(--clr-secondary-200);
@@ -134,24 +141,30 @@ input {
     opacity: .8;
 }
 
-.social__icons {
-    padding-bottom: 1rem;
+.social__links {
+    height: 40px;
+    text-align: center;
+}
+
+.social__links a {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: .5rem;
 }
 
 .social__links a i {
-    font-size: var(--fs-400);
-    border: 1.5px solid var(--clr-accent-300);
+    font-size: var(--fs-200);
+    outline: 2px solid var(--clr-accent-300);
     padding: .5rem;
     border-radius: 50%;
-    color: var(--clr-accent-100);
 }
 
 .social__links a i:hover {
-    border: none;
-    background-color: var(--clr-secondary-100);
-    border: 1.5px solid var(--clr-secondary-100);
+    outline: none;
     color: #fff;
-    transition: .2s ease-in-out;
+    background-color: var(--clr-accent-100);
 }
 
 .copy__right {
@@ -159,7 +172,7 @@ input {
     justify-content: center;
     align-items: center;
     gap: .2rem;
-}
+} 
 
 @media (min-width:600px) {
 
@@ -169,10 +182,6 @@ input {
         }
 
     input {
-        padding: .8rem 15rem .8rem .8rem;
-        border: .5px solid var(--clr-secondary-100);
-        border-radius: 30px;
-        opacity: .5;
-        cursor: pointer;
+        width: 60%;
         }
 }
